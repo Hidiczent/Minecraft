@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Test</h3>
+    <input type="number" id="Grade">
+    <button type="submit" onclick="Enter()">Enter</button>
+    <h2 id="your_grade"></h2>
+    <script>
+        function calculator(grade){
+         let let_grade=' '
+if (grade>=91 && grade <=100 ){
+let_grade="A"
+
+}
+else if (grade <=90 && grade >=81){
+    let_grade="B+"
+
+}
+else if (grade <=80 && grade >=76){
+    let_grade ="B"
+
+
+}
+else if (grade <=75 && grade >=71){
+    let_grade ="C+"
+
+}
+else if (grade <=70 && grade >=66){
+    let_grade ="C"
+}
+else if (grade <=65 && grade >=61){
+     let_grade ='D+'
+
+
+}
+else if (grade <=60 && grade >=50){
+    let_grade ="D"
+    
+
+}
+else if (grade <=49 && grade >=1){
+ let_grade ="F"   
+}
+else {
+    let_grade ="Hacker"
+}
+return let_grade
+}
+function Enter(){
+  let   grade=document.getElementById('Grade').value
+  let   let_grade=calculator(grade)
+  document.getElementById('your_grade').innerHTML="your grade: "+let_grade
+  document.getElementById('your_grade').style.color='green'
+  if (let_grade==="F"){
+    document.getElementById('your_grade').style.color='red'
+  }
+  else if  (let_grade==="Hacker"){
+    document.getElementById('your_grade').style.color='red'
+  }
+ 
+}
+
+    </script>
+</body>
+</html>

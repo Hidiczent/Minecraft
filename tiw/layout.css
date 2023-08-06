@@ -1,0 +1,32 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.header,
+.navbar,
+.main,
+.footer{
+    padding: 10px;
+}
+.header{
+    background-color: blueviolet;
+    width: 1000px;
+    height: 40px;
+}
+.navbar{
+background-color: brown;
+width: 1000px;
+height: 40px;
+}
+.main{
+    background-color: black;
+}
+.footer{
+
+}
